@@ -1,0 +1,153 @@
+/* =========================
+   BASE RESET
+========================= */
+.upload-page {
+  background: #0c0c0c;
+  color: #eaeaea;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+/* =========================
+   CENTER CONTAINER
+========================= */
+.upload-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 40px;
+}
+
+/* =========================
+   MAIN LAYOUT (STABLE GRID)
+========================= */
+.upload-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+}
+
+/* =========================
+   LEFT PANEL – SOURCES
+========================= */
+.sources-panel {
+  background: #111315;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.sources-panel h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.source-list {
+  margin-bottom: 16px;
+}
+
+.empty-text {
+  font-size: 14px;
+  color: #9ea2a5;
+}
+
+.source-item {
+  background: #1a1c1e;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Add sources */
+.secondary-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px dashed #3edfb6;
+  background: transparent;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+/* =========================
+   RIGHT PANEL – UPLOAD
+========================= */
+.upload-main {
+  background: #111315;
+  border-radius: 16px;
+  padding: 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+/* =========================
+   DROP ZONE (NOTEBOOK-STYLE)
+========================= */
+.drop-zone {
+  width: 100%;
+  border: 2px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 80px 24px;
+  text-align: center;
+  cursor: pointer;
+
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.drop-zone:hover {
+  border-color: #3edfb6;
+  background: rgba(62, 223, 182, 0.04);
+}
+
+.upload-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.drop-zone h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.drop-zone p {
+  font-size: 15px;
+  color: #9ea2a5;
+}
+
+#chooseFile {
+  color: #3edfb6;
+  cursor: pointer;
+}
+
+.drop-types {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* =========================
+   START EDITING BUTTON
+========================= */
+.start-btn {
+  padding: 14px 44px;
+  border-radius: 14px;
+  background: #3edfb6;
+  color: #000;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.start-btn:enabled {
+  opacity: 1;
+}
+
+/* =========================
+   STATUS
+========================= */
+#uploadStatus {
+  font-size: 14px;
+  color: #9ea2a5;
+}
